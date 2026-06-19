@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strato Cast</title>
+  <link rel="icon" href="bg.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="card">
+      <header class="search-bar">
+        <div class="title-group">
+          <p class="eyebrow">Strato Cast</p>
+          <h1>Weather at a glance.</h1>
+        </div>
+        <div class="search-controls">
+          <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." aria-label="Search for a city" />
+          <button class="search-btn" type="button">Search</button>
+        </div>
+        <p class="hint">Press Enter or tap Search to update weather data</p>
+      </header>
+
+      <section class="status" role="status" aria-live="polite">
+        Type a city name to begin
+      </section>
+
+      <main class="weather hidden">
+        <section class="location">
+          <p class="city">--</p>
+          <p class="date">--</p>
+        </section>
+
+        <section class="current">
+          <p class="temp">--<span>°c</span></p>
+          <p class="weather">--</p>
+          <p class="hi-low">--</p>
+        </section>
+
+        <section class="details-grid">
+          <article>
+            <p class="label">Feels like</p>
+            <p class="value feels">--</p>
+          </article>
+          <article>
+            <p class="label">Humidity</p>
+            <p class="value humidity">--</p>
+          </article>
+          <article>
+            <p class="label">Wind</p>
+            <p class="value wind">--</p>
+          </article>
+          <article>
+            <p class="label">Pressure</p>
+            <p class="value pressure">--</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
